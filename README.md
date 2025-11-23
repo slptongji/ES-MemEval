@@ -24,10 +24,10 @@ The experiments were conducted on the following environments and have been verif
 
 ### Python Configuration
 
-The `PYTHON_PATH` environment variable should be configured to point to the `src` directory to ensure correct module imports :
+The `PYTHONPATH` environment variable should be configured to point to the `src` directory to ensure correct module imports :
 
 ```sh
-export PYTHON_PATH="./src"    # Should be replaced with an absolute path, unless the working directory is fixed to the repository root. (In VSCode, this will be automatically configured.)
+export PYTHONPATH="./src"    # Should be replaced with an absolute path, unless the working directory is fixed to the repository root. (In VSCode, this will be automatically configured.)
 ```
 
 ### Project Configuration
