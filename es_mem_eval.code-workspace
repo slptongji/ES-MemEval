@@ -1,0 +1,79 @@
+{
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"explorer.fileNesting.enabled": true,
+		"explorer.fileNesting.expand": false,
+		"explorer.fileNesting.patterns": {
+			"*.py": "${capture}_config.py"
+		},
+		"python.analysis.include": [
+			"src"
+		],
+		"files.exclude": {
+			"**/__pycache__": true
+		},
+		"files.watcherExclude": {
+			"data": true,
+			"checkpoints": true,
+			".slurm": true
+		},
+		"pylint.importStrategy": "fromEnvironment",
+		"pylint.args": [
+			"--load-plugins=variable_declaration_checker",
+			"--disable=all",
+			"--enable=un-declared-variable",
+			"--enable=re-declared-variable"
+		],
+		"python.envFile": "${workspaceFolder}/python.env",
+		"search.useIgnoreFiles": false,
+		"python.analysis.packageIndexDepths": [
+			{
+				"name": "sklearn",
+				"depth": 2
+			},
+			{
+				"name": "matplotlib",
+				"depth": 2
+			},
+			{
+				"name": "scipy",
+				"depth": 2
+			},
+			{
+				"name": "django",
+				"depth": 2
+			},
+			{
+				"name": "flask",
+				"depth": 2
+			},
+			{
+				"name": "fastapi",
+				"depth": 2
+			},
+			{
+				"name": "cuda",
+				"depth": 3,
+				"includeAllSymbols": true
+			},
+			{
+				"name": "langchain_core",
+				"depth": 2,
+				"includeAllSymbols": false
+			},
+			{
+				"name": "anyio",
+				"depth": 0
+			},
+			{
+				"name": "ast",
+				"depth": 0
+			}
+		]
+	},
+	"folders": [
+		{
+			"path": "."
+		}
+	]
+}
